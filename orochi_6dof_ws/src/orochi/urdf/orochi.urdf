@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="orochi">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.05860789378583E-17 -2.77555756156289E-17 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="12.8" />
+      <inertia
+        ixx="0.683093333333333"
+        ixy="8.7633604077079E-17"
+        ixz="1.26210153439388E-15"
+        iyy="0.683093333333333"
+        iyz="-3.55271367880212E-19"
+        izz="1.36533333333333" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_0">
+    <inertial>
+      <origin
+        xyz="2.21364575388767E-08 -2.79407750550356E-07 0.0924156438654813"
+        rpy="0 0 0" />
+      <mass
+        value="1.88014486866152" />
+      <inertia
+        ixx="0.0151317721890805"
+        ixy="1.2237952342225E-08"
+        ixz="2.08088296155E-09"
+        iyy="0.0151316127478672"
+        iyz="-2.62643831043891E-08"
+        izz="0.010038350425731" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_0"
+    type="fixed">
+    <origin
+      xyz="0 0 0.02"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="0.0228471602671468 0.000500609688309126 0.0788576426309777"
+        rpy="0 0 0" />
+      <mass
+        value="2.51197128388461" />
+      <inertia
+        ixx="0.012008081154807"
+        ixy="-2.56915293947423E-05"
+        ixz="-0.00152433945966359"
+        iyy="0.0101247306598904"
+        iyz="-8.26381083889653E-06"
+        izz="0.00695225382377171" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.23849"
+      rpy="0 0 0" />
+    <parent
+      link="Link_0" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.967"
+      upper="2.967"
+      effort="1000"
+      velocity="2" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="7.89001450738079E-05 -0.171949488893076 0.0110023501027868"
+        rpy="0 0 0" />
+      <mass
+        value="3.31822697321063" />
+      <inertia
+        ixx="0.0184210473135389"
+        ixy="1.70853829649417E-05"
+        ixz="4.0781669305235E-06"
+        iyy="0.00835204214910708"
+        iyz="-0.00285248464316658"
+        izz="0.0199973474226765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.00024 0 0.161"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.094"
+      upper="2.094"
+      effort="1000"
+      velocity="2" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="5.3119E-06 0.10069 -0.018547"
+        rpy="0 0 0" />
+      <mass
+        value="1.8781" />
+      <inertia
+        ixx="0.01034"
+        ixy="2.518E-07"
+        ixz="-5.7602E-08"
+        iyy="0.003594"
+        iyz="-0.0016927"
+        izz="0.01059" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.3995 -0.00051"
+      rpy="3.1416 0 0" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.094"
+      upper="2.094"
+      effort="1000"
+      velocity="2" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="0.0194131556789511 -4.28172792902E-05 -0.107325643864137"
+        rpy="0 0 0" />
+      <mass
+        value="0.892428647319901" />
+      <inertia
+        ixx="0.00338370651670969"
+        ixy="-5.5096935945017E-07"
+        ixz="0.000365304335883195"
+        iyy="0.0030183348925586"
+        iyz="-2.20632524300689E-06"
+        izz="0.00135669086771203" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-2.9588E-05 0.22974 -0.00010578"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.967"
+      upper="2.967"
+      effort="1000"
+      velocity="2" />
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="1.376E-05 -0.04188 0.025899"
+        rpy="0 0 0" />
+      <mass
+        value="2.3887" />
+      <inertia
+        ixx="0.0090274"
+        ixy="2.9426E-06"
+        ixz="-2.0317E-06"
+        iyy="0.0030811"
+        iyz="-0.0016392"
+        izz="0.009105" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0.00060578 -3.2208E-05 -0.15975"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="Link_4" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.094"
+      upper="2.094"
+      effort="1000"
+      velocity="2" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="4.02145722768659E-06 4.0177895784755E-06 0.00756364496970607"
+        rpy="0 0 0" />
+      <mass
+        value="0.22588441636481" />
+      <inertia
+        ixx="0.000104188659613564"
+        ixy="7.81396930623338E-09"
+        ixz="-1.39484791249641E-08"
+        iyy="0.000104188604048639"
+        iyz="-1.39362927621745E-08"
+        izz="0.000193927698384729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://orochi/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0 -0.1845 -0.00025"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.1415"
+      upper="3.1415"
+      effort="1000"
+      velocity="2" />
+  </joint>
+</robot>

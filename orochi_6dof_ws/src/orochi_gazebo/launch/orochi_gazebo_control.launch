@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- start Gazebo  -->
+    <include file="$(find orochi_gazebo)/launch/orochi_world.launch" />   
+
+    <!-- start Gazebo controllers -->
+    <include file="$(find orochi_gazebo)/launch/orochi_gazebo_controller.launch" />   
+
+</launch>
