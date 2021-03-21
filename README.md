@@ -4,4 +4,5 @@ This repository contains two folders, one of which is a 6-axis manipulator in th
 You can build it with the following commands:
 
 $ catkin_make
+
 $ source devel/setup.bash
