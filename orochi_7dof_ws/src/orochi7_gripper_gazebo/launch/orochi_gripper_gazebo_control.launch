@@ -1,9 +1,0 @@
-<launch>
-
-    <!-- start Gazebo  -->
-    <include file="$(find orochi7_gripper_gazebo)/launch/orochi_gripper_world.launch" />   
-
-    <!-- start Gazebo controllers -->
-    <include file="$(find orochi7_gripper_gazebo)/launch/orochi_gripper_gazebo_controller.launch" />   
-
-</launch>

@@ -1,8 +1,0 @@
-<launch>
-
-    <rosparam file="$(find orochi7_gripper_gazebo)/config/trajectory_control.yaml" command="load"/>
-
-    <node name="orochi_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-          output="screen" ns="/orochi" args="arm_joint_controller gripper_controller"/>
-
-</launch>
