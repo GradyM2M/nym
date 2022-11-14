@@ -17,5 +17,7 @@ $ roslaunch orochi7 ar_track_alvar.launch
 $ rosrun orochi7_planning ar_track_follower.py
 ```
 
-## Prototype Design
-<img src="https://github.com/GradyM2M/linear_stepper_motor_controller/blob/main/img/%E6%A0%B7%E6%9C%BA%E5%9B%BE.jpg" width="1000">
+## 部分实验结果
+
+<img src="https://github.com/GradyM2M/orochi/blob/melodic-devel/img/version_1.png" width="1000">
+<img src="https://github.com/GradyM2M/orochi/blob/melodic-devel/img/version_2.png" width="1000">
