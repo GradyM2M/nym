@@ -13,10 +13,9 @@ $ cd .. && catkin_make && source devel/setup.bash
 
 ```sh
 $ roslaunch orochi7_gripper_gazebo orochi_control_bringup_moveit.launch
-```
-```sh
 $ roslaunch orochi7 ar_track_alvar.launch
-```
-```sh
 $ rosrun orochi7_planning ar_track_follower.py
 ```
+
+## Prototype Design
+<img src="https://github.com/GradyM2M/linear_stepper_motor_controller/blob/main/img/%E6%A0%B7%E6%9C%BA%E5%9B%BE.jpg" width="1000">
